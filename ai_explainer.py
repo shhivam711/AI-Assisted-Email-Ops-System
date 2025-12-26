@@ -4,7 +4,7 @@ from email_model import NormalizedEmail
 
 # Configure Gemini
 genai.configure(
-    api_key="AIzaSyDdOimv0m7g_CF9faGSK1nnHgyntTn2JOw"
+    api_key=os.getenv("GEMINI_API_KEY")
 )
 
 model = genai.GenerativeModel(
